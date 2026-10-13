@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "quizzes": [
+    {
+      "quiz_id": "network_fundamentals",
+      "title": "Network Fundamentals",
+      "description": "Five questions about TCP, addressing and application protocols.",
+      "questions": [
+        {
+          "question_id": "net_01",
+          "text": "What does TCP provide to an application?",
+          "options": {
+            "A": "A reliable, ordered byte stream",
+            "B": "Automatic JSON message boundaries",
+            "C": "Guaranteed zero network delay",
+            "D": "Built-in application authentication"
+          },
+          "answer": "A",
+          "time_limit": 15,
+          "points": 100
+        },
+        {
+          "question_id": "net_02",
+          "text": "Why does a TCP application need a framing rule?",
+          "options": {
+            "A": "To assign an IP address to the server",
+            "B": "To disable retransmission",
+            "C": "To recover individual messages from the byte stream",
+            "D": "To convert TCP into a broadcast protocol"
+          },
+          "answer": "C",
+          "time_limit": 20,
+          "points": 150
+        },
+        {
+          "question_id": "net_03",
+          "text": "Which IPv4 address refers to the local host?",
+          "options": {
+            "A": "255.255.255.255",
+            "B": "127.0.0.1",
+            "C": "192.0.2.10",
+            "D": "203.0.113.20"
+          },
+          "answer": "B",
+          "time_limit": 10,
+          "points": 100
+        },
+        {
+          "question_id": "net_04",
+          "text": "A blocking recv(4096) on a connected TCP socket returns b''. What does this indicate?",
+          "options": {
+            "A": "The next message is exactly 4096 bytes long",
+            "B": "No bytes are available yet, but the peer is guaranteed connected",
+            "C": "The message contains an empty JSON object",
+            "D": "The peer has closed its sending direction"
+          },
+          "answer": "D",
+          "time_limit": 20,
+          "points": 200
+        },
+        {
+          "question_id": "net_05",
+          "text": "Which machine should decide whether an answer arrived before this tournament's deadline?",
+          "options": {
+            "A": "Each client independently",
+            "B": "The server that owns the game state",
+            "C": "The DNS resolver",
+            "D": "The player's keyboard driver"
+          },
+          "answer": "B",
+          "time_limit": 15,
+          "points": 150
+        }
+      ]
+    },
+    {
+      "quiz_id": "python_basics",
+      "title": "Python and Data Basics",
+      "description": "Five questions about Python values, JSON and resource handling.",
+      "questions": [
+        {
+          "question_id": "py_01",
+          "text": "Which Python collection is immutable?",
+          "options": {
+            "A": "list",
+            "B": "dict",
+            "C": "set",
+            "D": "tuple"
+          },
+          "answer": "D",
+          "time_limit": 10,
+          "points": 100
+        },
+        {
+          "question_id": "py_02",
+          "text": "Which JSON value represents a boolean?",
+          "options": {
+            "A": "true",
+            "B": "\"true\"",
+            "C": "1",
+            "D": "null"
+          },
+          "answer": "A",
+          "time_limit": 10,
+          "points": 100
+        },
+        {
+          "question_id": "py_03",
+          "text": "Which clock is appropriate for measuring an elapsed timeout without wall-clock adjustments?",
+          "options": {
+            "A": "A printed calendar",
+            "B": "A client-supplied timestamp",
+            "C": "time.monotonic()",
+            "D": "A manually entered date"
+          },
+          "answer": "C",
+          "time_limit": 20,
+          "points": 200
+        },
+        {
+          "question_id": "py_04",
+          "text": "Which Python construct runs cleanup when leaving its try block, including during an exception?",
+          "options": {
+            "A": "if",
+            "B": "finally",
+            "C": "lambda",
+            "D": "match"
+          },
+          "answer": "B",
+          "time_limit": 15,
+          "points": 150
+        },
+        {
+          "question_id": "py_05",
+          "text": "What is len('TCP') in Python?",
+          "options": {
+            "A": "2",
+            "B": "4",
+            "C": "3",
+            "D": "It raises TypeError"
+          },
+          "answer": "C",
+          "time_limit": 5,
+          "points": 50
+        }
+      ]
+    }
+  ]
+}
